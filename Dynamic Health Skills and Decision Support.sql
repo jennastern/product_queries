@@ -1,9 +1,9 @@
 
 Declare
 -------------------------------------
-@AO_Key int = 58491
-,@Query_Start_Date DATE = '5/1/2021'
-,@Query_End_Date DATE = '7/19/2021'
+@AO_Key int = 
+,@Query_Start_Date DATE =
+,@Query_End_Date DATE = 
 ----------------------------------------------
 
 
