@@ -1,8 +1,8 @@
 Declare 
 
-@AO_Key INT = 51665
-,@Query_Start_Date DATE = '1/1/2021'
-,@Query_End_Date DATE = '1/31/2021'
+@AO_Key INT = 
+,@Query_Start_Date DATE = 
+,@Query_End_Date DATE = 
 
 
 select distinct
