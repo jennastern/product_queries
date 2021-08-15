@@ -3,14 +3,14 @@ Declare
 @Query_Start_Date DATE,
 @Query_End_Date DATE,
 @Exclude_Priors DATE,
-@AO_Key smallint,
+@AO_Key int,
 @PriorYearStart DATE,
 @PriorYearEnd Date
 
 ---------UPDATE THE 3 FIELDS BELOW------------------
-set @AO_Key = 1
-set @Query_Start_Date = '2021-01-01'
-set @Query_End_Date = '2021-05-25'
+set @AO_Key =  --update with AO Key
+set @Query_Start_Date =  --update with your query start date
+set @Query_End_Date = --update with your query end date
 --------------------------
 
 
