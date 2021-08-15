@@ -14,9 +14,9 @@ Declare
 @PriorPurchases int
 
 ---------UPDATE THE 4 FIELDS BELOW---------------------------------------------------------------------
-set @AO_Key = 	50060			--Put Account AOKey Here
-set @Query_Start_Date = '2020-1-1' --set Query Start Date
-set @Query_End_Date = '2020-6-30'	--Set Query End Date
+set @AO_Key =  --update with AO Key
+set @Query_Start_Date =  --update with your query start date
+set @Query_End_Date = --update with your query end date
 set @PriorPurchases = 1 --IF Prior Purchases type 1, if no Prior Purchases type 0
 --------------------------------------------------------------------------------------------------------
 
