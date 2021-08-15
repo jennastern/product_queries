@@ -1,15 +1,15 @@
 
 declare	
-	@AO_Key smallint
-	,@start_date datetime
-	,@end_date datetime
+	@AO_Key int
+	,@Query_start_date datetime
+	,@Query_end_date datetime
 
 
 
 ------------Update 3 fields below------------------------
-	set @AO_Key = 1
-	set	@start_date = '2020-01-01' --Insert Start Date
-	set @end_date = '2020-02-01' --Insert End Date
+	set @AO_Key = 
+	set @Query_start_date =  --Insert Start Date
+	set @query_end_date =  --Insert End Date
 -----------------------------------------------------------		
 
 
@@ -48,7 +48,7 @@ declare
 		 -- AND cmi.is_deleted = 0
 	INNER JOIN dbo.course_instance ci WITH (NOLOCK)
 		  ON cmi.course_instance_id = ci.course_instance_id 
-		  --AND ci.is_deleted = 0
+	
 	INNER JOIN dbo.user_student us WITH (NOLOCK) 
 		  ON ci.user_student_id = us.user_student_id
 		  AND us.is_deleted=0
@@ -100,10 +100,10 @@ declare
 	AND c.owner_org_node_id <>  'FFFFFFFF-FFFF-FFFF-FFFF-000000000002'
 	AND cmi.course_module_instance_status_id in (2,3,4,5)
 		
-	and ((ci.enrollment_Datetime >= @start_Date) and (ci.enrollment_datetime < @end_date))
-	AND ((cmi.create_datetime >= @start_date) and (cmi.create_datetime < @end_date ))
+	and ((ci.enrollment_Datetime >= @query_start_Date) and (ci.enrollment_datetime < @query_end_date))
+	AND ((cmi.create_datetime >= @Query_start_date) and (cmi.create_datetime <= @Query_end_date ))
 	and u.username not like '%test%'
 and u.last_name not like '%test%'
 	
-	and o.external_org_id = @AO_Key -- Insert Customer AO KEY here (not org_id)
+	and o.external_org_id = @AO_Key 
 
