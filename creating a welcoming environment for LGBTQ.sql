@@ -8,9 +8,9 @@ Declare
 
 ---------Update the 3 rows below to your query parameters----------------------------------
 
-set @AO_Key = 1 --update with AO Key
-set @Query_Start_Date = '1/1/2018' --update with your query start date
-set @Query_End_Date = '1/31/2021' --update with your query end date
+set @AO_Key =  --update with AO Key
+set @Query_Start_Date =  --update with your query start date
+set @Query_End_Date = --update with your query end date
 
 ---------------------------------------------------------------
 
