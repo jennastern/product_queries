@@ -60,7 +60,6 @@ u.username,
 u.last_name,
 u.first_name,
 o.org_name,
-o.org_node_code
 inst.org_node_name as Institution,
 inst.org_node_code,
 p.org_node_name as Parent,
