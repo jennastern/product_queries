@@ -67,8 +67,8 @@ on dept.parent_org_node_id = inst.org_node_id and inst.is_deleted = 0
 ----------------------------------------------------------------------
 
 where o.is_deleted = 0
-and ci.enrollment_datetime >= @Contract_Start_Date -- Replace Date Here
-and ci.enrollment_datetime <= @Contract_End_Date
+and ci.enrollment_datetime >= @query_start_date -- Replace Date Here
+and ci.enrollment_datetime <= @query_End_Date
 and o.external_org_id = @AO_KEY
 
 and ci.course_instance_interaction_mode_id <> 6
