@@ -75,4 +75,4 @@ and ((ci.unenrollment_reason_type_id not in ('1','5')) or (ci.unenrollment_reaso
 
 and ((ci.enrollment_datetime <= ci.completion_datetime) or (ci.completion_datetime is null)) --remove imported records
 
-and ci.course_name_at_time_of_enrollment like 'corporate compliance%'
+and ci.course_name_at_time_of_enrollment like 'corporate compliance 0%'
