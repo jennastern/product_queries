@@ -1,3 +1,4 @@
+------AACN Adult CCRN CCRN-E CCRN-K Certification Review Course- 01t30000006MSdfAAG.sql------
 Declare
 @Query_Start_Date DATE,
 @Query_End_Date DATE,
